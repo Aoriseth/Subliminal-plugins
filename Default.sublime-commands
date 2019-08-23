@@ -1,0 +1,10 @@
+[
+    {
+        "caption":"Insert Journal Template",
+        "command":"journal_template",
+    },
+    {
+    	"caption":"Generate Weekreview for journals",
+    	"command":"journal_weekly_generate"
+    }
+]
