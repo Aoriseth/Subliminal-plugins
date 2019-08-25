@@ -6,5 +6,9 @@
     {
     	"caption":"Generate Weekreview for journals",
     	"command":"journal_weekly_generate"
+    },
+    {
+    	"caption":"Get Release Date",
+    	"command":"get_release_date"
     }
 ]
