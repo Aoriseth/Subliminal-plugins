@@ -16,7 +16,22 @@ class JournalTemplateCommand(sublime_plugin.TextCommand):
 		selection = self.view.sel()
 		target = selection[0].begin()+len(today)*2+3
 		target_region = sublime.Region(target,target)
-		self.view.insert(edit, selection[0].begin(), str(today)+"\n"+line+"\n\n\n\n*Savour*\n*\n\n*Exercise*\n*\n\n*Gratitude*\n*\n\n*Sleep*\n*\n\n*Meditation*\n*")
+		template = '''
+
+*Exercise*
+*
+
+*Gratitude*
+*
+
+*Sleep*
+*
+
+*Meditation*
+*
+
+		'''
+		self.view.insert(edit, selection[0].begin(), str(today)+"\n"+line+template)
 		self.view.sel().clear()
 		self.view.sel().add(target_region)
 		
