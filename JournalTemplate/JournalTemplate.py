@@ -5,21 +5,19 @@ import os
 import time
 
 
-DIR = "C:\\journaldir\\"
+DIR = "C:\\Users\\lenna\\OneDrive\\Notes\\Journal\\"
 template = '''
 
-
-*Exercise*
-*
 
 *Gratitude*
 *
 
-*Sleep*
-*
+| Habit name   | Done? |
+|--------------|-------|
+| Journalling  |   _   |
+| Reading      |   _   |
 
-*Meditation*
-*
+
 '''
 
 
